@@ -1,0 +1,20 @@
+; Connection protocol
+protocol = http
+
+; Redmine domain
+domain = redmine.domain.com
+
+; Project to track
+project = my_little_project
+
+; Atom auth key
+auth_key = abcdef0123456789
+
+; Send notification by text message (only in Poland)
+notify = true
+
+; If notify equals to true specify phone number to send text messages
+phone = 555555555
+
+; Refreshing interval
+refresh = 60

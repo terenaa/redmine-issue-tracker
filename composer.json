@@ -1,0 +1,10 @@
+{
+    "require": {
+        "terenaa/sms-gateway": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "terenaa\\IssueTracker\\": "src/terenaa/"
+        }
+    }
+}
