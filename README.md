@@ -7,12 +7,12 @@ Requirements:
 
 ## Installation
 
-1. Download zip file and unzip it.
-2. Update composer dependencies
+* Download zip file and unzip it.
+* Update composer dependencies
 ```
 composer update
 ```
-3. Copy example config file (config/config.ini.example) and fill with correct values
+* Copy example config file (config/config.ini.example) and fill with correct values
 
 ## Examples
 
