@@ -7,8 +7,10 @@ Requirements:
 
 ## Installation
 
+1. Download zip file and unzip it.
+2. Update composer dependencies
 ```
-composer require terenaa/redmine-issue-tracker
+composer update
 ```
 
 ## Examples
