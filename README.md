@@ -12,6 +12,7 @@ Requirements:
 ```
 composer update
 ```
+3. Copy example config file (config/config.ini.example) and fill with correct values
 
 ## Examples
 
