@@ -111,9 +111,13 @@ class IssueTracker
      */
     protected function getConfig()
     {
-        if (!$this->config = parse_ini_file(__DIR__ . '/../../config/config.ini')) {
+        $configFile = __DIR__ . '/../../config/config.ini';
+
+        if (!file_exists($configFile)) {
             throw new IssueTrackerException('Config.ini file missing.');
-        };
+        }
+
+        $this->config = parse_ini_file($configFile);
     }
 
     /**
