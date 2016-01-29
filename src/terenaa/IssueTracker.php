@@ -52,7 +52,7 @@ class IssueTracker
                     exec("notify-send --urgency=critical --expire-time=5000 --icon=/usr/share/icons/Numix-Circle/scalable/apps/apport.svg '{$entry['title']}'");
                     $this->setCache($entry['number']);
 
-                    echo $entry['title'] . PHP_EOL;
+                    echo $entry['title'];
 
                     if ($this->config['notify']) {
                         try {
