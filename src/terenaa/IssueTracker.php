@@ -42,7 +42,7 @@ class IssueTracker
      */
     public function run()
     {
-        while (true) {
+        while (true && $this->config) {
             try {
                 $entry = $this->getLastEntry();
 
