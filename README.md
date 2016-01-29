@@ -7,12 +7,13 @@ Requirements:
 
 ## Installation
 
-* Download zip file and unzip it.
-* Update composer dependencies
-```
+```bash
+git clone https://github.com/terenaa/redmine-issue-tracker.git RedmineIssueTracker
+cd RedmineIssueTracker/
 composer update
 ```
-* Copy example config file (config/config.ini.example) and fill with correct values
+
+Copy an example config file (config/config.ini.example) and fill with correct values
 
 ## Examples
 
