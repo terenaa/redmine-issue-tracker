@@ -30,7 +30,11 @@ class IssueTracker
      */
     public function __construct()
     {
-        $this->getConfig();
+        try {
+            $this->getConfig();
+        } catch (IssueTrackerException $e) {
+            echo $e->getMessage() . PHP_EOL;
+        }
     }
 
     /**
@@ -105,7 +109,9 @@ class IssueTracker
      */
     protected function getConfig()
     {
-        $this->config = parse_ini_file(__DIR__ . '/../../config/config.ini');
+        if (!$this->config = parse_ini_file(__DIR__ . '/../../config/config.ini')) {
+            throw new IssueTrackerException('Config.ini file missing.');
+        };
     }
 
     /**
