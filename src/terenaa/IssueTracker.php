@@ -46,7 +46,7 @@ class IssueTracker
             try {
                 $entry = $this->getLastEntry();
 
-                echo date('Y-m-d H:i:s ');
+                echo PHP_EOL . date('Y-m-d H:i:s ');
 
                 if ($this->getCache() != $entry['number']) {
                     exec("notify-send --urgency=critical --expire-time=5000 --icon=/usr/share/icons/Numix-Circle/scalable/apps/apport.svg '{$entry['title']}'");
