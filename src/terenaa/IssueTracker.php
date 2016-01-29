@@ -106,6 +106,8 @@ class IssueTracker
 
     /**
      * Gets configuration settings from file
+     *
+     * @throws IssueTrackerException
      */
     protected function getConfig()
     {
