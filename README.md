@@ -22,6 +22,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use terenaa\IssueTracker\IssueTracker;
 
+$loop = true;
 $it = new IssueTracker();
-$it->run();
+$it->run($loop);
 ```

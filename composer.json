@@ -4,7 +4,8 @@
     },
     "autoload": {
         "psr-4": {
-            "terenaa\\IssueTracker\\": "src/terenaa/"
+            "terenaa\\TrackerScaffold\\": "src/terenaa/TrackerScaffold/",
+            "terenaa\\IssueTracker\\": "src/terenaa/IssueTracker/"
         }
     }
 }
